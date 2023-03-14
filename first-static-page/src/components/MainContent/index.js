@@ -7,6 +7,7 @@ function MainContent(){
             <li>It's composable</li>
             <li>It's declarative</li>
             <li>It's hireable</li>
+            <li>it is a very popular library</li>
         </ul>
         <h2>
             Facts about React
