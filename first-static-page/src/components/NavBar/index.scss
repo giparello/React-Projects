@@ -1,15 +1,33 @@
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
 }
-.nav-logo{
+
+.nav-logo {
     width: 40px;
+    margin-right: 20px
 }
-.nav-items{
-    display: flex;
-    list-style: none;
+
+.nav>h3,
+.nav>h4 {
+
+    color: white;
+    margin: 0;
+
+
 }
-.nav-items > li{
-    padding:10px
+
+.nav>h3 {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-items>li {
+    padding: 10px;
 }

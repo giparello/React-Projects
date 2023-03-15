@@ -1,0 +1,22 @@
+.main-content{
+    padding: 57px 27px;
+    color: white;
+    background-image: url(../../assets/logo512.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y:center ;
+}
+.header{
+    margin: 0;
+    font-size: 50px;
+}
+.header2{
+    margin-bottom: 0;
+}
+.list >li{
+    padding: 10px;
+}
+.list>li::marker{
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
