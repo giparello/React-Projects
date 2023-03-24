@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
 import Main from './components/Main';
+import Card from './components/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar/>
     <Main/>
+    <Card/>
     <App />
   </React.StrictMode>
 );
