@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <NavBar/>
     <Main/>
-    <Card image={image} rating="5.0" cost="100" location="USA" reviewnumber="6"/>
+    <Card topic="Life Lessons with Katie Zaferes" image={image} rating="5.0" cost="100" location="USA" reviewnumber="6"/>
     <Card image={image} rating="3.0" cost="150" location="USA" reviewnumber="10"/>
     <App />
   </React.StrictMode>
