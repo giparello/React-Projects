@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
 import Main from './components/Main';
 import Card from './components/Card';
+import image from './assets/katie.png';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar/>
     <Main/>
-    <Card/>
+    <Card image={image} rating="5.0" cost="100" location="USA" reviewnumber="6"/>
+    <Card image={image} rating="3.0" cost="150" location="USA" reviewnumber="10"/>
     <App />
   </React.StrictMode>
 );
