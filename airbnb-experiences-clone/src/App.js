@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "./components/Card"
 import data from "./data"
-import NavBar from "./components/NavBar"
+
 /*
 Challenge:
 
@@ -31,8 +31,9 @@ export default function App() {
     
     return (
         <div>
-            <NavBar/>
+            <section className="cards-list">
             {cards}
+            </section>
         </div>
     )
 }
