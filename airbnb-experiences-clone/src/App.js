@@ -4,7 +4,7 @@ import data from "./data"
 
 
 export default function App() {
-            // <Hero />
+            
     const cards = data.map(item => {
         return (
             <Card 
