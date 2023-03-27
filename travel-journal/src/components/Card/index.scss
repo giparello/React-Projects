@@ -1,0 +1,27 @@
+
+  
+  .card {
+    width: 30%;
+    font-size: 15px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
+    position: relative;
+    align-items: center;
+    box-shadow: 1px 2px 5px 5px grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+  }
+  
+  /* ADD */
+  .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

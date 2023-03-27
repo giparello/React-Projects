@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Card from './components/Card';
 import data from './data';
 
@@ -13,7 +13,7 @@ function App() {
   })
   return(
     <div>
-      <section>
+      <section className='cards-list'>
       {cards}
       </section>
     </div>
