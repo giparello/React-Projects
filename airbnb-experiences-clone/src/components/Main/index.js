@@ -1,4 +1,4 @@
-import Collage from '../../assets/airbnbcollage.png'
+import Collage from '../../images/airbnbcollage.png'
 
 function Main(){
     return(
