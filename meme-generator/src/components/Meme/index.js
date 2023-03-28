@@ -6,6 +6,7 @@ function Meme(){
 
 const [currentImage, setCurrentImage]= React.useState('')
 
+
 function getMemeImage(){
     const memesArray = memesData.data.memes
     const randomNumber=Math.floor(Math.random()*memesArray.length)
