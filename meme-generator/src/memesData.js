@@ -1,4 +1,4 @@
-const memesData=[ {
+const memesData={
     "success": true,
     "data": {
         "memes": [
@@ -805,5 +805,5 @@ const memesData=[ {
         ]
     }
 }
-]
+
 export default memesData
