@@ -12,6 +12,7 @@ const [meme, setMeme] = React.useState({
 const [allMemeImages, setAllMemeImages]=React.useState(memesData)
 
 
+
 function getMemeImage(){
     const memesArray = allMemeImages.data.memes
     const randomNumber=Math.floor(Math.random()*memesArray.length)
@@ -22,15 +23,44 @@ function getMemeImage(){
     }))
 
 }
+function handleChange(event){
+    const {name,value} =event.target
+    setMeme(prevMeme =>({
+        ...prevMeme,
+        [name]:value
+    }))
+}
 
     return(
         <main>
-            
-            <div className='meme-form'>
-                <input placeholder='top text' type="text" className='form-input'></input>
-                <input placeholder='bottom text' type="text"className='form-input'></input>
-                <button onClick={getMemeImage} className='form-button'>Get a new meme image</button>
-                <img className='meme-image' src={meme.randomImage} alt="meme"/>
+            <div className="form">
+                <input 
+                    type="text"
+                    placeholder="Top text"
+                    className="form--input"
+                    name="topText"
+                    value={meme.topText}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form--input"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
+                />
+                <button 
+                    className="form--button"
+                    onClick={getMemeImage}
+                >
+                    Get a new meme image 🖼
+                </button>
+            </div>
+            <div className="meme">
+                <img src={meme.randomImage} className="meme--image" />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
         </main>
     )

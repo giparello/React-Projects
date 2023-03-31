@@ -1,15 +1,14 @@
 import './index.scss'
 function Header(){
     return(
-        <div className="header">
-            <div className="left-header">
-            <img className="header-image" src="https://cdn3.iconfinder.com/data/icons/popular-memes/48/JD-02-512.png" alt="meme face"/>
-            <h2>Meme Generator</h2>
-            </div>
-            <div className="right-header">
-            <h2>React Course - Project 3</h2>
-            </div>
-        </div>
+        <header className="header">
+            <img 
+                src="./images/troll-face.png" 
+                className="header--image"
+            alt='meme'/>
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Course - Project 3</h4>
+        </header>
     )
 }
 export default Header
