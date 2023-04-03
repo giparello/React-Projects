@@ -1,6 +1,7 @@
 import './index.scss'
 function Header(){
     return(
+        //Create the header
         <header className="header">
             <img 
                 src="./images/troll-face.png" 

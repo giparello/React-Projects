@@ -3,13 +3,13 @@ import React, { useEffect } from 'react'
 function Meme(){
 
 
-
+//create state for each meme
 const [meme, setMeme] = React.useState({
     topText: "",
     bottomText:"",
     randomImage:"https://i.imgflip.com/tau4.jpg"
 })
-
+//create state for all memes gotten from API
 const [allMemes, setAllMemes]=React.useState([])
 
 //API call to meme API
@@ -20,7 +20,7 @@ useEffect(()=>{
 }, [])
 
 function getMemeImage(){
-   
+   //Get a random image
     const randomNumber=Math.floor(Math.random()*allMemes.length)
     const url=allMemes[randomNumber].url
     setMeme(prevMeme =>({
@@ -29,6 +29,7 @@ function getMemeImage(){
     }))
 
 }
+//handle a new image link from the API
 function handleChange(event){
     const {name,value} =event.target
     setMeme(prevMeme =>({
