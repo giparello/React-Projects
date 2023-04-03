@@ -1,7 +1,8 @@
 import './index.scss'
-import memesData from '../../memesData'
-import React from 'react'
+import React, { useEffect } from 'react'
 function Meme(){
+
+
 
 const [meme, setMeme] = React.useState({
     topText: "",
@@ -9,12 +10,17 @@ const [meme, setMeme] = React.useState({
     randomImage:"https://i.imgflip.com/tau4.jpg"
 })
 
-const [allMemeImages, setAllMemeImages]=React.useState(memesData)
+const [allMemes, setAllMemes]=React.useState([])
 
-
+//API call to meme API
+useEffect(()=>{
+    fetch("https://api.imgflip.com/get_memes")
+    .then(res => res.json())
+    .then(data => setAllMemes(data.data.memes))
+}, [])
 
 function getMemeImage(){
-    const memesArray = allMemeImages.data.memes
+    const memesArray = allMemes
     const randomNumber=Math.floor(Math.random()*memesArray.length)
     const url=memesArray[randomNumber].url
     setMeme(prevMeme =>({
